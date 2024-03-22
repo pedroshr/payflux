@@ -1,4 +1,4 @@
-package com.phique.payflux;
+package phique.payflux;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
