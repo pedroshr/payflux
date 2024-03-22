@@ -8,7 +8,6 @@ public class PayfluxApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PayfluxApplication.class, args);
-		System.out.println("teste");
 	}
 
 }
