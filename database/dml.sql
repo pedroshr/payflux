@@ -4,3 +4,5 @@ INSERT INTO transactions (name_trade, type_trade, amount, tag, date_trade) VALUE
     ('Rent', 'out', 1200.00, 'Housing', '2024-03-05'),
     ('Groceries', 'out', 200.00, 'Food', '2024-03-10'),
     ('Freelance Work', 'in', 500.00, 'Income', '2024-03-15');
+
+INSERT INTO TotalMoney (total_amount) VALUES (2440);
