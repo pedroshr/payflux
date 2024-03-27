@@ -5,6 +5,7 @@ import lombok.*;
 import phique.payflux.dto.TransactionRequestDTO;
 import phique.payflux.dto.TransactionResponseDTO;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 
@@ -45,6 +46,4 @@ public class Transaction {
         this.tag = data.tag();
         this.date = data.date();
     }
-
-    ;
 }
