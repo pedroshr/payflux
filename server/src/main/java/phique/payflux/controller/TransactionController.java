@@ -25,7 +25,10 @@ public class TransactionController {
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/all")
     public List<TransactionResponseDTO> getAllTransaction() throws Exception {
-        List<TransactionResponseDTO> transactionList = repository.findAll().stream().map(TransactionResponseDTO::new).toList();
+        List<TransactionResponseDTO> transactionList = repository.findAll()
+                                                        .stream().map(TransactionResponseDTO::new)
+                                                        .sorted(Comparator.comparing(TransactionResponseDTO::date)
+                                                        .reversed()).collect(Collectors.toList());
         return transactionList;
     }
 
@@ -33,9 +36,10 @@ public class TransactionController {
     @GetMapping("/all/in")
     public List<TransactionResponseDTO> getAllInTransaction() {
         List<TransactionResponseDTO> transactionList = repository.findAll()
-                .stream()
-                .map(TransactionResponseDTO::new)
-                .collect(Collectors.toList());
+                                                        .stream()
+                                                        .map(TransactionResponseDTO::new)
+                                                        .sorted(Comparator.comparing(TransactionResponseDTO::date).reversed())
+                                                        .collect(Collectors.toList());
 
         Iterator<TransactionResponseDTO> iterator = transactionList.iterator();
         while (iterator.hasNext()) {
@@ -51,9 +55,10 @@ public class TransactionController {
     @GetMapping("/all/out")
     public List<TransactionResponseDTO> getAllOutTransaction() {
         List<TransactionResponseDTO> transactionList = repository.findAll()
-                .stream()
-                .map(TransactionResponseDTO::new)
-                .collect(Collectors.toList());
+                                                        .stream()
+                                                        .map(TransactionResponseDTO::new)
+                                                        .sorted(Comparator.comparing(TransactionResponseDTO::date).reversed())
+                                                        .collect(Collectors.toList());
 
         Iterator<TransactionResponseDTO> iterator = transactionList.iterator();
         while (iterator.hasNext()) {
