@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", sans-serif;
+}
+
+.icon-in {
+    filter: invert(60%) sepia(81%) saturate(343%) hue-rotate(38deg) brightness(103%) contrast(93%);
+    margin-right: 15px;
+}
+
+.icon-out {
+    filter: invert(36%) sepia(71%) saturate(6682%) hue-rotate(346deg) brightness(95%) contrast(73%);
+    margin-right: 15px;
+}
