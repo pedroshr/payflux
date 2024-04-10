@@ -20,8 +20,8 @@ export type Transactions = {
 
 export default function HomePage() {
     const [isModalOpen, setIsModalOpen] = React.useState(false)
-    const [totalIn, setTotalIn] = React.useState<number>(3400)
-    const [totalOut, setTotalOut] = React.useState<number>(2000)
+    const [totalIn, setTotalIn] = React.useState<number>(0)
+    const [totalOut, setTotalOut] = React.useState<number>(0)
     const [latestTransactions, setLatestTransactions] = React.useState<Transactions[]>([])
 
     useEffect(() => {
