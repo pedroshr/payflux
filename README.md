@@ -100,10 +100,13 @@ Routes for the app pages.
 | <kbd>POST</kbd> /transaction          | Add a transaction                                                             |
 | <kbd>PUT</kbd> /transaction           | Edit a transaction                                                            |
 
-<h2>🖥️ Screenshots</h2>
-<img src="https://github.com/pedroshr/payflux/assets/116831695/22fa2436-9059-4483-98e3-ea666009c089" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
-<img src="https://github.com/pedroshr/payflux/assets/116831695/22fa2436-9059-4483-98e3-ea666009c089" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
-<img src="https://github.com/pedroshr/payflux/assets/116831695/22fa2436-9059-4483-98e3-ea666009c089" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
-
 <h2>🤝 Contribute</h2>
-Feel free to contribute, giving suggestions and making pull requests.
+Feel free to contribute, giving suggestions and making pull requests.****
+
+<h2>🖥️ Screenshots</h2>
+
+![dashboard_ex](https://github.com/pedroshr/payflux/assets/116831695/49ce5504-09f0-48d6-99f1-f50a69434cdd)
+![received_ex](https://github.com/pedroshr/payflux/assets/116831695/816f5803-6212-4d9c-a8b2-6c96514d2237)
+![outflow_ex](https://github.com/pedroshr/payflux/assets/116831695/d02fff55-91f9-4e3e-b976-a8b5ca74f310)
+![newtransaction_ex](https://github.com/pedroshr/payflux/assets/116831695/14305e95-ecdb-4144-8cdc-6557f2f9ca5e)
+![edit_ex](https://github.com/pedroshr/payflux/assets/116831695/c8f4fe79-3c3e-4296-988c-29208b5add6d)
