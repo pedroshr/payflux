@@ -14,10 +14,11 @@ Payflux is a fullstack web application I developed to learn about Spring Boot an
 <h3>Prerequisites:</h3>
 You will need all the items from the list below to run the project.
 
-- [Java 17](https://www.oracle.com/java/technologies/downloads/)
+- [Java 17+](https://www.oracle.com/java/technologies/downloads/)
 - [Node.js](https://nodejs.org/en)
 - [Git](https://git-scm.com/downloads)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Maven](https://maven.apache.org/download.cgi)
 
 <h3>Installing:</h3>
 
@@ -26,7 +27,7 @@ You will need all the items from the list below to run the project.
     git clone https://github.com/pedroshr/payflux.git
     ```
     ```bash
-    cd project-folder
+    cd payflux
     ```
 
 2. <b>Configuring the database:</b>
@@ -41,16 +42,16 @@ You will need all the items from the list below to run the project.
     ```bash
     INSERT INTO TotalMoney (total_amount) VALUES (0);
     ```
+    
+   Perhaps it's necessary to update the URL of your database in the "application.properties"(server/src/main/resources/application.properties) file of the backend.
 
-3. <b>Backend</b>:
+   Ps: If you want to populate the database via script, the file ["dml.sql"](https://github.com/pedroshr/payflux/blob/master/database/dml.sql) has some randomly generated examples. However, you can simply follow the previous steps and populate directly in the app itself.
+
+4. <b>Backend</b>:
 
    Entering the backend folder:
     ```bash
     cd server
-    ```
-    Compiling:
-    ```bash
-    mvn clean install
     ```
 
     Running the server:
@@ -59,11 +60,12 @@ You will need all the items from the list below to run the project.
     ```
     The API can be accessed at http://localhost:8080.
 
-4. <b>Frontend</b>:
+5. <b>Frontend</b>:
+
+    Open a new terminal in the folder of the project
    
     Entering the frontend folder:
     ```bash
-    cd ..
     cd web
     ```
     Installing dependencies:
@@ -100,10 +102,13 @@ Routes for the app pages.
 | <kbd>POST</kbd> /transaction          | Add a transaction                                                             |
 | <kbd>PUT</kbd> /transaction           | Edit a transaction                                                            |
 
-<h2>🖥️ Screenshots</h2>
-<img src="https://github.com/pedroshr/payflux/assets/116831695/22fa2436-9059-4483-98e3-ea666009c089" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
-<img src="https://github.com/pedroshr/payflux/assets/116831695/22fa2436-9059-4483-98e3-ea666009c089" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
-<img src="https://github.com/pedroshr/payflux/assets/116831695/22fa2436-9059-4483-98e3-ea666009c089" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" />
-
 <h2>🤝 Contribute</h2>
-Feel free to contribute, giving suggestions and making pull requests.
+Feel free to contribute, giving suggestions and making pull requests.****
+
+<h2>🖥️ Screenshots</h2>
+
+![dashboard_ex](https://github.com/pedroshr/payflux/assets/116831695/49ce5504-09f0-48d6-99f1-f50a69434cdd)
+![received_ex](https://github.com/pedroshr/payflux/assets/116831695/816f5803-6212-4d9c-a8b2-6c96514d2237)
+![outflow_ex](https://github.com/pedroshr/payflux/assets/116831695/d02fff55-91f9-4e3e-b976-a8b5ca74f310)
+![newtransaction_ex](https://github.com/pedroshr/payflux/assets/116831695/14305e95-ecdb-4144-8cdc-6557f2f9ca5e)
+![edit_ex](https://github.com/pedroshr/payflux/assets/116831695/c8f4fe79-3c3e-4296-988c-29208b5add6d)
