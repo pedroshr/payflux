@@ -57,7 +57,7 @@ export const FormEditModal: React.FC<FormEditModalProps> = ({ closeModal, transa
                 </C.ItemContainer>
                 <C.ItemContainer>
                     <InputForm type="text" placeholder="Transaction Name*" name="name_trade" value={transaction.name_trade} onChange={handleChange} width="50%" />
-                    <InputForm type="text" placeholder="Amount*" name="amount" value={transaction.amount.toString()} onChange={handleChange} width="50%" />
+                    <InputForm type="number" placeholder="Amount*" name="amount" value={transaction.amount.toString()} onChange={handleChange} width="50%" />
                 </C.ItemContainer>
                 <C.ItemContainer>
                     <InputForm type="date" name="date" value={transaction.date} onChange={handleChange} width="45%" />
