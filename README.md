@@ -26,7 +26,7 @@ You will need all the items from the list below to run the project.
     git clone https://github.com/pedroshr/payflux.git
     ```
     ```bash
-    cd project-folder
+    cd payflux
     ```
 
 2. <b>Configuring the database:</b>
