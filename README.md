@@ -14,7 +14,7 @@ Payflux is a fullstack web application I developed to learn about Spring Boot an
 <h3>Prerequisites:</h3>
 You will need all the items from the list below to run the project.
 
-- [Java 17](https://www.oracle.com/java/technologies/downloads/)
+- [Java 17+](https://www.oracle.com/java/technologies/downloads/)
 - [Node.js](https://nodejs.org/en)
 - [Git](https://git-scm.com/downloads)
 - [PostgreSQL](https://www.postgresql.org/)
@@ -53,10 +53,6 @@ You will need all the items from the list below to run the project.
     ```bash
     cd server
     ```
-    Compiling:
-    ```bash
-    mvn clean install
-    ```
 
     Running the server:
     ```bash
@@ -65,10 +61,11 @@ You will need all the items from the list below to run the project.
     The API can be accessed at http://localhost:8080.
 
 5. <b>Frontend</b>:
+
+    Open a new terminal in the folder of the project
    
     Entering the frontend folder:
     ```bash
-    cd ..
     cd web
     ```
     Installing dependencies:
