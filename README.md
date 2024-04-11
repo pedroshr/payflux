@@ -10,6 +10,8 @@
 <h2>📜 About</h2>
 Payflux is a fullstack web application I developed to learn about Spring Boot and React. The idea of this app is to manage finances, where you can add income and expenses, being able to categorize them.
 
+[Figma project](https://www.figma.com/file/2zdGL7fadhdcN1v1GP4pwY/Payflux?type=design&node-id=0%3A1&mode=design&t=CdxTeALeswEeit5V-1).
+
 <h2>💻 How to use?</h2>
 <h3>Prerequisites:</h3>
 You will need all the items from the list below to run the project.
