@@ -41,8 +41,12 @@ You will need all the items from the list below to run the project.
     ```bash
     INSERT INTO TotalMoney (total_amount) VALUES (0);
     ```
+    
+   Perhaps it's necessary to update the URL of your database in the "application.properties"(server/src/main/resources/application.properties) file of the backend.
 
-3. <b>Backend</b>:
+   Ps: If you want to populate the database via script, the file ["dml.sql"](https://github.com/pedroshr/payflux/blob/master/database/dml.sql) has some randomly generated examples. However, you can simply follow the previous steps and populate directly in the app itself.
+
+4. <b>Backend</b>:
 
    Entering the backend folder:
     ```bash
@@ -59,7 +63,7 @@ You will need all the items from the list below to run the project.
     ```
     The API can be accessed at http://localhost:8080.
 
-4. <b>Frontend</b>:
+5. <b>Frontend</b>:
    
     Entering the frontend folder:
     ```bash
