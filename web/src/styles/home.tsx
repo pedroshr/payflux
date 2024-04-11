@@ -89,11 +89,19 @@ font-size: 25px;
 font-weight: 400;
 color: #323232;
 padding: 20px 0;
+gap: 20px;
 
 &.name {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
 }
 `
 

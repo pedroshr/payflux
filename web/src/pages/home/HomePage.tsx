@@ -93,7 +93,7 @@ export default function HomePage() {
                                     </TableCell>
                                     <TableCell style={{ width: '25%' }}>{transaction.amount}</TableCell>
                                     <TableCell style={{ width: '25%' }}>{transaction.tag}</TableCell>
-                                    <TableCell style={{ width: '20%' }}>{format(new Date(transaction.date), 'MM/dd/yyyy')}</TableCell>
+                                    <TableCell style={{ width: '20%' }}>{new Date(transaction.date).toISOString().split('T')[0]}</TableCell>
                                 </TableRow>
                             )
                         })}
