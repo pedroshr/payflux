@@ -75,6 +75,7 @@ export default function OutflowPage() {
                             <TableHeader style={{ width: '25%' }}>Value</TableHeader>
                             <TableHeader style={{ width: '25%' }}>Tag</TableHeader>
                             <TableHeader style={{ width: '20%' }}>Date</TableHeader>
+                            <TableHeader style={{ width: '15%', backgroundColor: 'white' }}></TableHeader>
                         </TableRow>
                         {outflowTransactions.map(transaction => {
                             return (
