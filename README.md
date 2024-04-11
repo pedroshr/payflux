@@ -18,6 +18,7 @@ You will need all the items from the list below to run the project.
 - [Node.js](https://nodejs.org/en)
 - [Git](https://git-scm.com/downloads)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Maven](https://maven.apache.org/download.cgi)
 
 <h3>Installing:</h3>
 
